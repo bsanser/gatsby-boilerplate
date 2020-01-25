@@ -16,6 +16,7 @@ export const query = graphql`
         # this is what we want from the result of the query
         title
         author
+        imageAlt
       }
       body
     }
