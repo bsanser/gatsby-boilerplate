@@ -37,5 +37,11 @@ module.exports = {
         path: 'images', // it is going to look for the files in images and apply actions in the transformer
       },
     },
+    {
+      resolve: 'gatsby-source-instagram',
+      options: {
+        username: 'gatsbyjs'
+      }
+    }
   ],
 };

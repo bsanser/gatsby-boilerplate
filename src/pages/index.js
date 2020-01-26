@@ -5,6 +5,7 @@ import usePosts from '../hooks/use-posts';
 
 import PostPreview from '../components/post-preview';
 import Hero from '../components/hero';
+import Insta from '../components/insta';
 
 export default () => {
   const posts = usePosts();
@@ -18,8 +19,9 @@ export default () => {
         <Link to="/about">&larr; Go to about</Link>
         {posts.map(post => (
           <PostPreview key={post.slug} post={post} />
-          // <pre>{JSON.stringify(post, null, 2)}</pre> 
+          // <pre>{JSON.stringify(post, null, 2)}</pre>
         ))}
+        <Insta />
       </Layout>
     </>
   );
